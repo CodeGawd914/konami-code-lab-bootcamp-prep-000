@@ -18,7 +18,7 @@ function init() {
     if (key === codes[index]){
       ++index 
       if (index === codes.length){
-        document.body.alert('Secret Solved!')
+        document.alert('Secret Solved!')
         index = 0;
       } 
          } else {

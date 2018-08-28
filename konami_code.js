@@ -14,15 +14,12 @@ const codes = [
 function init() {
   var index = 0;
   document.body.addEventListener('keydown', function (e) {
-    var key = e.key;
-  console.log(key===codes[index])
+    var key = e.key
     if (key === codes[index]){
       ++index 
-      console.log('index',index)
       if (index === codes.length){
-        window.alert('Secret Solved!')
+        document.body.alert('Secret Solved!')
         index = 0;
-        console.log('index2',index)
       } 
          } else {
         index = 0
